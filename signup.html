@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="signin.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="login_all">
+  <div class="signin">
+    <header class="header">
+      <div class="logo"><img src="./image/logo.svg"></div>
+      <div class="signin_text1">
+        <p class="signin_text2">이미 회원이신가요? <a href="./signin.html" class="signin_url">로그인 하기</a></p>
+      </div>
+    </header>
+      <form action="/index.html" method="post">
+        <div class="id_pw">
+          <div class="email">
+            <label class="email_text">이메일</label>
+            <div class="id_box">
+              <input id="email_id" name="email" type="email">
+            </div>
+          </div>
+          <div class="password">
+            <label class="pw_text">비밀번호</label>
+            <div class="pw_box">
+              <input id="email_pw" name="password" type="password">
+              <img src="./image/icon/eye-off.svg"> 
+            </div>
+          </div>
+          <div class="password_re">
+            <label class="pw_text">비밀번호 확인</label>
+            <div class="pw_box">
+              <input id="email_pw" name="password" type="password">
+              <img src="./image/icon/eye-off.svg"> 
+            </div>
+            <p class="pw_text2">비밀번호가 다릅니다</p>
+          </div>
+        </div>
+      </form>
+        <button class="login">회원가입</button>
+  </div>
+        <div class="social">
+          <div class="social_text">
+            <p>소셜 로그인</p>
+          </div>
+          <div class="social_img">
+            <img src="./image/icon/ic_google.png" class="google">
+            <img src="./image/icon/google.svg" class="google_bg">
+            <img src="./image/icon/kakaobg.svg" class="kakao_bg">
+            <img src="./image/icon/kakaotalk.svg" class="kakao">
+          </div>
+        </div>
+  </div>
+</body>
+</html>
