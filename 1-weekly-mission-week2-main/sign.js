@@ -32,8 +32,8 @@ function PasswordInput(){
 
 // 로그인
 function login(){
-  if (email_input.value === "test@codeit.com") {
-    location.href = "/folder"
+  if (email_input.value === "test@codeit.com" && pw_input.value === "codeit101") {
+    location.href = "/folder.html"
   } else {
     if (error_email.style.display = "none"){
       error_email.innerText = "이메일을 확인해 주세요.";
@@ -44,13 +44,15 @@ function login(){
   }
 }
 
+// 로그인 button 눌렀을때
+loginButton.addEventListener("click", loginButtonClick);
+
 // Enter 키 눌렀을떄
-document.onkeydown = function (e){
-  let keyBoardEvent = e.keyBoardEvent;
-  if (keyBoardEvent === "Enter") {
+document.addEventListener("keydown", function(e) {
+  if (e.key === "Enter") {
     login(e);
   }
-}
+});
 
 // 눈 모양
 function Eye(){
